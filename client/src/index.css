@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fun, vibrant palette */
+  --font-display: 'Fredoka', cursive;
+  --font-body: 'Nunito', sans-serif;
+
+  /* Base Light Mode */
+  --background: 45 100% 96%;   /* Light yellow-cream background */
+  --foreground: 260 20% 15%;   /* Deep purple-grey text */
+
+  /* Primary Action Color (Vibrant Purple) */
+  --primary: 262 80% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary/Accent (Hot Pink) */
+  --secondary: 330 85% 60%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Success (Lime Green) */
+  --success: 142 70% 50%;
+  
+  /* Muted/Card Backgrounds */
+  --card: 0 0% 100%;
+  --card-foreground: 260 20% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 260 20% 15%;
+
+  --muted: 260 20% 94%;
+  --muted-foreground: 260 10% 50%;
+
+  --accent: 40 100% 50%;       /* Orange accent */
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 260 20% 90%;
+  --input: 260 20% 90%;
+  --ring: 262 80% 50%;
+
+  --radius: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-family: var(--font-body);
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-foreground;
+  }
+}
+
+/* Custom Animation Classes */
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+  }
+  .text-shadow-md {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  }
+  .box-shadow-pop {
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+  }
+}
