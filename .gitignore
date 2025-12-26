@@ -6,3 +6,7 @@ vite.config.ts.*
 *.tar.gz
 .local/
 .env
+attached_assets/
+*.db
+*.sqlite
+*.sqlite3
