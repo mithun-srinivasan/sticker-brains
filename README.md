@@ -17,6 +17,14 @@ npm run dev
 
 Then open `http://localhost:5000` in your browser.
 
+## Demo (quick run)
+
+```bash
+npx tsx server/index.ts
+# open http://localhost:5000
+# stop with Ctrl + C
+```
+
 ## How to add your own stickers?
 
 1. Put your meme images in `/client/public/memes/` folder
