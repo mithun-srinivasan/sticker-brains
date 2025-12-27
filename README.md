@@ -44,10 +44,14 @@ That's it!
 
 ## Tech Stack
 
-- React + TypeScript
-- Express.js
-- SQLite database
-- Tailwind CSS
+- Frontend: React + TypeScript
+- Styling: Tailwind CSS
+- UI: shadcn/ui + Radix
+- Data: TanStack Query
+- Effects: canvas-confetti
+- Tooling: Vite, tsx
+- Backend: Node.js + Express
+- Database: SQLite (better-sqlite3) + Drizzle
 
 ---
 
