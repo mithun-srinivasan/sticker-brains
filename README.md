@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Vibe Coded](https://img.shields.io/badge/Vibe-Coded-ff69b4)](#)
+![Vibe Coded](https://img.shields.io/badge/Vibe-Coded-ff69b4)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-blue)](#quick-start-beginners)
 
