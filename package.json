@@ -4,9 +4,12 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development tsx server/index.ts",
-    "demo": "tsx server/index.ts",
-    "build": "tsx script/build.ts",
+    "dev": "tsx apps/api/index.ts",
+    "dev:clean": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$conn = Get-NetTCPConnection -LocalPort 5000 -State Listen -ErrorAction SilentlyContinue; if ($conn) { $pids = $conn | Select-Object -ExpandProperty OwningProcess -Unique; $pids | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue; Write-Output ('Stopped process ' + $_ + ' on port 5000') } } else { Write-Output 'Port 5000 is free' }\"",
+    "demo:ready": "npm run dev:clean && npm run db:push",
+    "demo:start": "npm run demo:ready && npm run dev",
+    "demo": "tsx apps/api/index.ts",
+    "build": "tsx scripts/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push"
